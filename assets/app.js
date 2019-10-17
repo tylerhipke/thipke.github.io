@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var siteObj = {
         1: {
+            name: "Check Yo Pill",
+            description: "Check Yo Pill was designed to help save lives.  Use our app to check adverse reactions amongst your prescribed medicines.  Our custom APIs pull information from hosted servers.  The medicine you add to your personal profile is then compared, and data is shown." + 
+            "<br><br> See GitHub Link for code credits.",
+            link: "https://checkyopill.herokuapp.com",
+            github: "https://github.com/ucsd-teamwork-projects/groupProj2"
+        },
+        2: {
             name: "Pre-Game",
-            description: "Pre-Game was created with the intention of you having a great start to your night. Centered arond your event of the night, enter the venue/location you'll attend to find all the nearby local spots. Please enjoy responsibly! Don't be that guy, don't drink and drive!" + 
+            description: "Pre-Game was created with the intention of you having a great start to your night. Centered around your event of the night, enter the venue/location you'll attend to find all the nearby local spots. Please enjoy responsibly! Don't be that guy, don't drink and drive!" + 
             "<br><br> See GitHub Link for code credits.",
             link: "https://tylerhipke.github.io/tyler-pre-game",
             github: "https://www.github.com/tylerhipke/tyler-pre-game"
-        },
-        2: {
-            name: "LIRI Bot",
-            description: "LIRI Bot is a Siri Clone built in node.js." + 
-            "<br><br>Currently in development, links are inactive.",
-            link: "#",
-            github: "#"
         },
         3: {
             name: "Totally Twisted Trivia: car edition",
