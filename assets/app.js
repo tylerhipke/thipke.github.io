@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             github: "https://www.github.com/tylerhipke/giphy-app"
         },
     }
-    $(".card-img-overlay").click(function () {
+    $(".card").click(function () {
         var clickedCard = $(this).attr("id");
         var currentKey = siteObj[clickedCard];
         console.log(currentKey);

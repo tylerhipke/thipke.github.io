@@ -50,7 +50,7 @@ p, a{
 }
 
 #content {
-    margin-top: 5%
+    margin-top: 80px;
 }
 
 .center {
@@ -63,7 +63,7 @@ p, a{
 .container {
     z-index: 5;
     position: absolute;
-    top: 10%;
+    top: 100px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
