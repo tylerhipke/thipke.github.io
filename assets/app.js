@@ -7,18 +7,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var siteObj = {
     1: {
-      name: "Nice Pace",
-      description: "",
-      link: "https://nice-pace.herokuapp.com",
-      github: "https://github.com/tylerhipke/friend-finder"
+      name: "Nicole Frank TWE",
+      description: "Commercial product.  Code not available.",
+      link: "https://www.nicolefranktwe.com",
+      github: "#"
     },
     2: {
+      name: "New GateWay Solutions",
+      description: "",
+      link: "https://www.newgateway.org",
+      github: "#"
+    },
+    3: {
       name: "Vybe",
       description: "",
       link: "https://bcs-project-3.herokuapp.com",
       github: "https://github.com/militara106/PROJECT-3"
     },
-    3: {
+    4: {
       name: "Check Yo Pill",
       description:
         "Check Yo Pill was designed to help save lives.  Use our app to check adverse reactions amongst your prescribed medicines.  Our custom APIs pull information from hosted servers.  The medicine you add to your personal profile is then compared, and data is shown." +
@@ -27,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link: "https://checkyopill.herokuapp.com",
       github: "https://github.com/ucsd-teamwork-projects/groupProj2"
     },
-    4: {
+    5: {
       name: "Pre-Game",
       description:
         "Pre-Game was created with the intention of you having a great start to your night. Centered around your event of the night, enter the venue/location you'll attend to find all the nearby local spots. Please enjoy responsibly! Don't be that guy, don't drink and drive!" +
