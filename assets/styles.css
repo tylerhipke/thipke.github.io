@@ -21,18 +21,7 @@ p, a{
 #sider {
     background-color: white;
     height: 100%;
-}
-
-#sidernav {
-    background-color: white;
-    height: 100%;
-}
-
-.container-custom{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: 10;
 }
 
 .text-shadow {
@@ -55,14 +44,6 @@ p, a{
     z-index: -5;
 }
 
-.minimum_zindex{
-    z-index: -999;
-}
-
-.maximum_zindex{
-    z-index: 999;
-}
-
 #face {
     width: 125px;
     margin-bottom: 20px;
@@ -70,11 +51,6 @@ p, a{
 
 #content {
     margin-top: 80px;
-    z-index: 9999;
-}
-
-#flextop{
-    z-index: 5;
 }
 
 .center {
@@ -120,26 +96,3 @@ p, a{
 .side-img {
     width: 2.5rem;
 }
-
-@media (min-width: 768px) { 
-   .mobile{
-       display: none;
-   }
-   .desktop{
-    display: block;
-   }
-   #sider{
-       background-color: rgba(0, 0, 0, 0);
-   }
- }
- @media (max-width: 767.98px) { 
-     .mobile{
-         display: block;
-     }
-     .desktop{
-         display: none;
-     }
-     #sidernav{
-        display: none;
-    }
-  }
