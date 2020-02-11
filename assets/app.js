@@ -7,16 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var siteObj = {
     1: {
-      name: "Nice Pace",
-      description: "",
-      link: "https://nice-pace.herokuapp.com",
-      github: "https://github.com/tylerhipke/friend-finder"
+      name: "Nicole Frank: The Wardrobe Evolution",
+      description: "Proprietary code is unavailable for public access.",
+      link: "https://www.nicolefranktwe.com",
+      github: "#"
     },
     2: {
-      name: "Vybe",
-      description: "",
-      link: "https://bcs-project-3.herokuapp.com",
-      github: "https://github.com/militara106/PROJECT-3"
+      name: "New Gateway Solutions",
+      description: "Proprietary client code and internal infranstructure code is unavailable for public access.",
+      link: "https://newgateway.org",
+      github: "#"
     },
     3: {
       name: "Check Yo Pill",
