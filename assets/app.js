@@ -13,12 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
       github: "#"
     },
     2: {
+      name: "Nicole Frank: The Wardrobe Evolution",
+      description: "Proprietary code is unavailable for public access.",
+      link: "https://nfrank.myshopify.com",
+      github: "#"
+    },
+    3: {
+      name: "RKC Sales Alliance",
+      description: "Proprietary code is currently public but is subject to change.  Please note that this project is under development and is subject to change",
+      link: "http://www.tylerhipke.com/rck-codehead/store.html",
+      github: "#"
+    },
+    4: {
       name: "New Gateway Solutions",
       description: "Proprietary client code and internal infranstructure code is unavailable for public access.",
       link: "https://newgateway.org",
       github: "#"
     },
-    3: {
+    5: {
       name: "Check Yo Pill",
       description:
         "Check Yo Pill was designed to help save lives.  Use our app to check adverse reactions amongst your prescribed medicines.  Our custom APIs pull information from hosted servers.  The medicine you add to your personal profile is then compared, and data is shown." +
@@ -27,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link: "https://checkyopill.herokuapp.com",
       github: "https://github.com/ucsd-teamwork-projects/groupProj2"
     },
-    4: {
+    6: {
       name: "Pre-Game",
       description:
         "Pre-Game was created with the intention of you having a great start to your night. Centered around your event of the night, enter the venue/location you'll attend to find all the nearby local spots. Please enjoy responsibly! Don't be that guy, don't drink and drive!" +
