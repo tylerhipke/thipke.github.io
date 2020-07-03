@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       name: "RKC Sales Alliance",
       description: "Proprietary code is currently public but is subject to change.  Please note that this project is under development and is subject to change",
       link: "http://www.tylerhipke.com/rck-codehead/store.html",
-      github: "#"
+      github: "https://www.github.com/tylerhipke/rck-codehead"
     },
     4: {
       name: "New Gateway Solutions",
