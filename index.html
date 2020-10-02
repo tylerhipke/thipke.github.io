@@ -1,290 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Hipke</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./assets/styles.css"
-    />
-  </head>
 
-  <body>
-    <header class="flex-container">
-      <h1 class="display-1 text-white">TYLER HIPKE</h1>
-    </header>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
-    <div
-      class="modal fade shadow-lg"
-      tabindex="-1"
-      role="dialog"
-      id="site-modal"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="site-title">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p id="site-text">Modal body text goes here.</p>
-            <a id="site-link" href="#" target="_blank"
-              ><button type="button" class="btn btn-primary">
-                Visit Now
-              </button></a
-            >
-            <a id="site-github" href="#" target="_blank"
-              ><button type="button" class="btn btn-primary">
-                Github Code
-              </button></a
-            >
-          </div>
+<body>
+
+    <!-- navbar will be floating but lowered -->
+    <!-- sidebar will be nested in navbar, so it will be fixed... -->
+
+
+    <nav class="">
+        <div id="navbarhere"></div>
+        <div id="sidebar"></div>
+    </nav>
+
+    <!-- eschew navbar concept for pure sidebar  -->
+
+
+
+    <div class="flex-container">
+        <div class="row" style="margin: 0 0">
+            <aside class="col-3-md">
+                <h1>TYLER HIPKE</h1>
+            </aside>
+            <main class="col-9-md">
+                <div class="container">
+                    <h1>main content here</h1>
+                </div>
+            </main>
         </div>
-      </div>
+    </div>
     </div>
 
-    <!-- test -->
+    <!-- main content, horizontally scrolling with icons representing the sites, hover will show image with title only -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 card-body shadow-lg text-center" id="sider">
-          <img src="./img/face.jpg" id="face" class="rounded-circle mb-3" />
-          <h3>TYLER HIPKE</h3>
-          <p class="mb-0">Full-Stack Web Dev</p>
-          <p class="mb-3">San Diego, CA, USA</p>
-          <p class="mb-3">
-            <span>
-              <img src="./img/java.png" class="side-img" title="Java" />
-              <img
-                src="./img/js-file.png"
-                class="side-img"
-                title="JavaScript"
-              />
-              <img src="./img/html-5-logo.png" class="side-img" title="HTML5" />
-              <img src="./img/node.png" class="side-img" title="node.js" />
-              <img
-                src="./img/adobe-photoshop.png"
-                class="side-img"
-                title="Photoshop"
-              />
-            </span>
-          </p>
 
-          <h5 class="mt-4">my links</h5>
-          <a
-            href="https://www.github.com/tylerhipke"
-            target="_blank"
-            >github</a
-          >
-          <br>
-          <a
-            href="https://www.linkedin.com/in/tylerhipke"
-            target="_blank"
-            >linkedin</a
-          >
-          <br>
-          <a
-            href="https://www.upwork.com/o/profiles/users/_~01ba2125ed03ea3235/"
-            target="_blank"
-            >upwork</a
-          >
-          <h5 class="mt-4">contact</h5>
-          <!-- <p class="mb-0">619 821 1375</p> -->
-          <a href="mailto: tylerhipke@gmail.com">tylerhipke@gmail.com</a>
+    <!-- graphic content will again be hidden by icon, possibly grouped by application type? -->
 
-          <a href="./res.pdf" target="_blank">
-            <h5 class="mt-4">resume</h5>
-          </a>
+</body>
 
-          <h5 class="mt-4">NOTE</h5>
-          <p>portfolio is being rewritten to include creative content, along side technical  content</p>
-        </div>
-
-        <div class="col-md-9" id="content">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="1">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/twe.png" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">Nicole Frank: The Wardrobe Evolution (FW2019)</h5>
-                      <p class="card-text">
-                        E-Commerce website built with Shopify.  Features custom front-end code and product management via Excel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="2">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/twess2019.png" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">Nicole Frank: The Wardrobe Evolution (SS2019)</h5>
-                      <p class="card-text">
-                        E-Commerce website built with Shopify.  Features custom front-end code and product management via Excel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="3">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/comingsoon.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">RKC Sales Alliance</h5>
-                      <p class="card-text">
-                        Corporate medical PPE distributor.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="4">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/ngsc.png" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">New Gateway Solutions</h5>
-                      <p class="card-text">
-                        Wordpress-focused client website builder.  Current clients include Chula Vista Library.  Majority of coding focuses on internal managment software. 
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="5">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/cyp.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">CHECK YO PILL</h5>
-                      <p class="card-text">
-                        Full-Stack Web Application, complete with server-side
-                        rendering, custom RESTful APIs, log-in authentification,
-                        and MySQL profile database.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12">
-              <div class="card shadow mb-3" id="6">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/pregame.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">Pre-Game</h5>
-                      <p class="card-text">
-                        Front-End Web Application. Accesses external proprietary
-                        APIs to dynamically generate content, client side.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12" style="display: none">
-              <div class="card shadow mb-3" id="1">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/pregame.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12" style="display: none">
-              <div class="card shadow mb-3" id="1">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="./img/pregame.jpg" class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title text-dark">Card title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./assets/app.js"></script>
 </html>
