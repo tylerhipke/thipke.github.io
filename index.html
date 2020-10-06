@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/stylesheets/styles.css">
 </head>
 
-<body>
+<body class="align-items-center">
 
     <!-- navbar will be floating but lowered -->
     <!-- sidebar will be nested in navbar, so it will be fixed... -->
@@ -26,38 +26,55 @@
 
 
 
-    <div class="flex-container">
+    <div class="flex-container my-auto">
         <div class="row" style="margin: 0 0">
-            <aside class="col-3-md">
-                <h1 class="mainheader">TYLER</h1>
-                <h1 class="mainheader">HIPKE</h1>
-                <h5 class="">front-end web dev</h5>
+            <!-- sidebar -->
+            <aside id="sidebar" class="col-sm-3">
+                <div class="row">
+                    <h1 class="">
+                        TYLER
+                        <br>
+                        HIPKE
+                    </h1>
+                    <h5 class="">front-end web dev</h5>
+                </div>
             </aside>
-            <main class="col-9-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                nicole frank twe
-                            </div>
-                            <div class="card">
-                                rk medic line
-                            </div>
-                            <div class="card">
-                                ao codsgn
-                            </div>
-                            <div class="card">
 
-                            </div>
-                            <div class="card">
+            <!-- main content -->
+            <main class="col-sm-9">
 
-                            </div>
+                <!-- code content -->
+                <div class="row">
+                    <div class="col-12">
+                        <h5>code</h5>
+                    </div>
+                </div>
+                <div class="row flex-row flex-nowrap overflow-auto" style="flex-direction: row;">
+                    <div class="col-5">
+                        <div id="leadingcard"
+                            class="card rounded-0 w-100 justify-content-center align-items-center t-code_card">
+                            <img src="./assets/content/icons/nf-logo-icon_650x650.png" class="card-img t-icon_image"
+                                alt="...">
                         </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="card rounded-0 w-100 h-100 justify-content-center align-items-center">
+                            <img src="./assets/content/icons/rkc-logo-650-custom.png" class="card-img t-icon_image"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="codeheader" class="row flex-row flex-nowrap overflow-auto" style="flex-direction: row;">
+                    <div class="col-5">
+                        <h4>NICOLE FRANK: TWE</h4>
+                    </div>
+                    <div class="col-5">
+                        <h4>RK MEDIC LINE</h4>
                     </div>
                 </div>
             </main>
         </div>
-    </div>
     </div>
 
     <!-- main content, horizontally scrolling with icons representing the sites, hover will show image with title only -->
@@ -66,5 +83,16 @@
     <!-- graphic content will again be hidden by icon, possibly grouped by application type? -->
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script src="./assets/scripts/app.js"></script>
 
 </html>
