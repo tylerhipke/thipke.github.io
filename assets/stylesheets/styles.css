@@ -7,6 +7,7 @@
 .t-icon_image{
     width: 64px;
     max-height: 64px;
+    margin: 15em 10em;
 }
 
 .t-code_card{
@@ -21,6 +22,7 @@
     position: relative;
     right: -5em;
     top: 4em;
+    z-index: 15;
 }
 
 #codeheader{
@@ -32,6 +34,12 @@
 }
 
 body{
-    margin-top: 25vh;
+    margin-top: 15vh;
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #071f33;
+}
+
+.display-1{
+    font-family: Didot, serif;
+    font-style: italic;
 }

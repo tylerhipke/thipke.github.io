@@ -9,4 +9,4 @@ var cardWidth = positionInfo.width + "px";
 var cardWidth 
 
 //set card height to width
-document.getElementById("leadingcard").style["height"] = cardWidth ;
+//document.getElementById("leadingcard").style["height"] = cardWidth ;
