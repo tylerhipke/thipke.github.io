@@ -10,3 +10,5 @@ var cardWidth
 
 //set card height to width
 //document.getElementById("leadingcard").style["height"] = cardWidth ;
+
+var cardElement = document.getElementsByClassName('t-code_card');
