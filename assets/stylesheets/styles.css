@@ -17,11 +17,21 @@
 }
 
 .t-horizontal_scrollable{ 
-    overflow-x: auto; 
+    /* force horizontal overflow */
+    overflow-x: scroll; 
     white-space: nowrap; 
     display: inline-block; 
-    float: none; 
+    float: none;
+    width: 73.2vw;
+
+    /* hidescrollbar Edge, FFox */
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
 } 
+
+.t-horizontal_scrollable::-webkit-scrollbar {
+    /* display: none; */
+}
 
 .card-img-overlay{
 
@@ -43,6 +53,7 @@
 }
 
 body{
+    overflow-x: clip; 
     margin-top: 15vh;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #38405f;
@@ -51,4 +62,11 @@ body{
 .display-1{
     font-family: Didot, serif;
     font-style: italic;
+}
+
+@media (max-width: 767.98px){ 
+    .t-horizontal_scrollable{ 
+        width: 100%;
+    }
+
 }
