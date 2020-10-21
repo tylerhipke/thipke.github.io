@@ -22,6 +22,7 @@
         display: inline-block; 
         float: none;
         width: 73.2vw;
+        overflow-y: hidden;
 
         /* hidescrollbar Edge, FFox */
         -ms-overflow-style: none;
@@ -32,6 +33,19 @@
         display: none;
     }
 
+    .t-custom_card_overlay{
+        position: absolute;
+        bottom: -.9em;
+        left: 0;
+    }
+
+    .t-card_header_font{
+        font-weight: bold;
+        letter-spacing: 2.5pt;
+        font-style: italic;
+    }
+
+
     .display-1{
         font-family: Didot, serif;
         font-style: italic;
@@ -39,13 +53,6 @@
 
 
 /* IDs */
-    #codeheader{
-        position: relative;
-        top: -1.5em;
-        font-weight: bold;
-        letter-spacing: 2.5pt;
-        font-style: italic;
-    }
 
 
 /* MEDIA QUERIES */
@@ -57,6 +64,10 @@
 
         .t-icon_image{
             margin: 30vw 30vw;
+        }
+
+        #sidebar{
+            padding-bottom: 3em;
         }
     }
 
