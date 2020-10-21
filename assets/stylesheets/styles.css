@@ -1,72 +1,73 @@
-.t-mainheader{
-    position: relative;
-    right: -2.5em;
-    z-index: 15;
-}
+/* css3 stylesheet */
 
-.t-icon_image{
-    width: 64px;
-    max-height: 64px;
-    margin: 15em 10em;
-    
-}
-
-.t-code_card{
-    height: 100%;
-    width: 300px;
-}
-
-.t-horizontal_scrollable{ 
-    /* force horizontal overflow */
-    overflow-x: scroll; 
-    white-space: nowrap; 
-    display: inline-block; 
-    float: none;
-    width: 73.2vw;
-
-    /* hidescrollbar Edge, FFox */
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
-} 
-
-.t-horizontal_scrollable::-webkit-scrollbar {
-    /* display: none; */
-}
-
-.card-img-overlay{
-
-}
-
-#sidebar{
-    position: relative;
-    right: -5em;
-    top: 4em;
-    z-index: 15;
-}
-
-#codeheader{
-    position: relative;
-    top: -1.5em;
-    font-weight: bold;
-    letter-spacing: 2.5pt;
-    font-style: italic;
-}
-
-body{
-    overflow-x: clip; 
-    margin-top: 15vh;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #38405f;
-}
-
-.display-1{
-    font-family: Didot, serif;
-    font-style: italic;
-}
-
-@media (max-width: 767.98px){ 
-    .t-horizontal_scrollable{ 
-        width: 100%;
+/* TAGS */
+    body{
+        overflow-x: clip; 
+        margin-top: 15vh;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #38405f;
     }
 
-}
+
+/* CLASSES */
+    .t-icon_image{
+        width: 64px;
+        max-height: 64px;
+        margin: 15em 10em;
+        
+    }
+
+    .t-horizontal_scrollable{ 
+        /* force horizontal overflow */
+        overflow-x: scroll; 
+        white-space: nowrap; 
+        display: inline-block; 
+        float: none;
+        width: 73.2vw;
+
+        /* hidescrollbar Edge, FFox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    } 
+
+    .t-horizontal_scrollable::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-img-overlay{
+
+    }
+
+    .display-1{
+        font-family: Didot, serif;
+        font-style: italic;
+    }
+
+
+/* IDs */
+    #codeheader{
+        position: relative;
+        top: -1.5em;
+        font-weight: bold;
+        letter-spacing: 2.5pt;
+        font-style: italic;
+    }
+
+
+/* MEDIA HEADERS */
+    /* mobile only */
+    @media (max-width: 767.98px){ 
+        .t-horizontal_scrollable{ 
+            width: 100%;
+        }
+    }
+
+    /* tablet & deskt only */
+    @media (min-width: 768px){ 
+        #sidebar{
+            position: relative;
+            right: -5em;
+            top: 4em;
+            z-index: 15;
+        }
+    }
