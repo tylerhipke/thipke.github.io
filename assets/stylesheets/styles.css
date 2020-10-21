@@ -12,9 +12,7 @@
 /* CLASSES */
     .t-icon_image{
         width: 64px;
-        max-height: 64px;
-        margin: 15em 10em;
-        
+        max-height: 64px;        
     }
 
     .t-horizontal_scrollable{ 
@@ -32,10 +30,6 @@
 
     .t-horizontal_scrollable::-webkit-scrollbar {
         display: none;
-    }
-
-    .card-img-overlay{
-
     }
 
     .display-1{
@@ -60,6 +54,10 @@
         .t-horizontal_scrollable{ 
             width: 100%;
         }
+
+        .t-icon_image{
+            margin: 30vw 30vw;
+        }
     }
 
     /* tablet only */
@@ -68,7 +66,11 @@
             position: relative;
             top: 4em;
             z-index: 15;
-        }        
+        } 
+        
+        .t-icon_image{
+            margin: 22vw 22vw;
+        }
     }
 
     /* desktop only */
@@ -78,5 +80,9 @@
             right: -5em;
             top: 4em;
             z-index: 15;
+        }
+
+        .t-icon_image{
+            margin: 15vw 15vw;
         }
     }
