@@ -8,6 +8,10 @@
         background-color: #38405f;
     }
 
+    a{
+        color: #989CAB;
+    }
+
 
 /* CLASSES */
     .t-icon_image{
@@ -16,12 +20,13 @@
     }
 
     .t-horizontal_scrollable{ 
+        margin-bottom: 4em;
         /* force horizontal overflow */
         overflow-x: scroll; 
         white-space: nowrap; 
         display: inline-block; 
         float: none;
-        width: 73.2vw;
+        width: 73vw;
         overflow-y: hidden;
 
         /* hidescrollbar Edge, FFox */
@@ -45,14 +50,25 @@
         font-style: italic;
     }
 
-
     .display-1{
         font-family: Didot, serif;
         font-style: italic;
+        color: #8A9EEB;
+    }
+
+    .t-fixed_top{
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
 
 /* IDs */
+    #sidebarposition{
+        padding-top: 20vh;
+        padding-left: 5em;
+    }
 
 
 /* MEDIA QUERIES */
@@ -60,6 +76,7 @@
     @media (max-width: 767.98px){ 
         .t-horizontal_scrollable{ 
             width: 100%;
+            margin-bottom: 3em;
         }
 
         .t-icon_image{
@@ -67,31 +84,25 @@
         }
 
         #sidebar{
+            position: relative;
             padding-bottom: 3em;
         }
     }
 
     /* tablet only */
     @media (min-width: 768px) and (max-width: 1199.98px){
-        #sidebar{
-            position: relative;
-            top: 4em;
-            z-index: 15;
-        } 
         
         .t-icon_image{
             margin: 22vw 22vw;
+        }
+
+        .t-horizontal_scrollable{
+            width: 72vw;
         }
     }
 
     /* desktop only */
     @media (min-width: 1199.98px){ 
-        #sidebar{
-            position: relative;
-            right: -5em;
-            top: 4em;
-            z-index: 15;
-        }
 
         .t-icon_image{
             margin: 15vw 15vw;
