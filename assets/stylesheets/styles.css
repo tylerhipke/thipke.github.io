@@ -90,6 +90,10 @@
             width: 72vw;
         }
 
+        #sidebarposition{
+            padding-top: 20vh;
+            margin-left: 2em;
+        }
     }
 
     /* desktop only */
@@ -97,6 +101,11 @@
 
         .t-icon_image{
             margin: 15vw 15vw;
+        }
+
+        #sidebarposition{
+            padding-top: 20vh;
+            padding-left: 12vw;
         }
     }
 
@@ -109,8 +118,4 @@
             left: 0;
         }
 
-        #sidebarposition{
-            padding-top: 20vh;
-            padding-left: 5em;
-        }
     }
