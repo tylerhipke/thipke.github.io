@@ -53,22 +53,11 @@
     .display-1{
         font-family: Didot, serif;
         font-style: italic;
-        color: #8A9EEB;
-    }
-
-    .t-fixed_top{
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
+        color: #92A6F7;
     }
 
 
 /* IDs */
-    #sidebarposition{
-        padding-top: 20vh;
-        padding-left: 5em;
-    }
 
 
 /* MEDIA QUERIES */
@@ -85,7 +74,8 @@
 
         #sidebar{
             position: relative;
-            padding-bottom: 3em;
+            margin-bottom: 3em;
+            margin-left: 1em;
         }
     }
 
@@ -99,6 +89,7 @@
         .t-horizontal_scrollable{
             width: 72vw;
         }
+
     }
 
     /* desktop only */
@@ -106,5 +97,20 @@
 
         .t-icon_image{
             margin: 15vw 15vw;
+        }
+    }
+
+    /* tablet AND desktop */
+    @media (min-width: 768px) {
+        .t-fixed_top{
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #sidebarposition{
+            padding-top: 20vh;
+            padding-left: 5em;
         }
     }
