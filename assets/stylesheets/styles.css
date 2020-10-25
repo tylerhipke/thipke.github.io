@@ -1,121 +1,130 @@
 /* css3 stylesheet */
 
 /* TAGS */
-    body{
-        overflow-x: clip; 
-        margin-top: 15vh;
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        background-color: #38405f;
-    }
 
-    a{
-        color: #989CAB;
-    }
+body {
+    overflow-x: clip;
+    margin-top: 15vh;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #38405f;
+}
 
+a {
+    color: #989CAB;
+}
+
+h5 {
+    font-weight: 400;
+}
 
 /* CLASSES */
-    .t-icon_image{
-        width: 64px;
-        max-height: 64px;        
-    }
 
-    .t-horizontal_scrollable{ 
-        margin-bottom: 4em;
-        /* force horizontal overflow */
-        overflow-x: scroll; 
-        white-space: nowrap; 
-        display: inline-block; 
-        float: none;
-        width: 73vw;
-        overflow-y: hidden;
+.t-icon_image {
+    width: 64px;
+    max-height: 64px;
+}
 
-        /* hidescrollbar Edge, FFox */
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    } 
+.t-horizontal_scrollable {
+    margin-bottom: 4em;
+    z-index: 10;
+    /* force horizontal overflow */
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: inline-block;
+    float: none;
+    width: 73vw;
+    overflow-y: hidden;
+    /* hidescrollbar Edge, FFox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
-    .t-horizontal_scrollable::-webkit-scrollbar {
-        display: none;
-    }
+.t-horizontal_scrollable::-webkit-scrollbar {
+    display: none;
+}
 
-    .t-custom_card_overlay{
-        position: absolute;
-        bottom: -.9em;
-        left: 0;
-    }
+.t-custom_card_overlay {
+    position: absolute;
+    bottom: -.9em;
+    left: 0;
+}
 
-    .t-card_header_font{
-        font-weight: bold;
-        letter-spacing: 2.5pt;
-        font-style: italic;
-    }
+.t-card_header_font {
+    font-weight: bold;
+    letter-spacing: 2.5pt;
+    font-style: italic;
+}
 
-    .display-1{
-        font-family: Didot, serif;
-        font-style: italic;
-        color: #92A6F7;
-    }
+.display-1 {
+    font-family: Didot, serif;
+    font-style: italic;
+    color: #92A6F7;
+}
 
+.card {
+    background-color: #DCE2F7;
+    transition: .25s;
+}
+
+.card:hover {
+    background-color: #ffffff;
+}
 
 /* IDs */
 
-
 /* MEDIA QUERIES */
-    /* mobile only */
-    @media (max-width: 767.98px){ 
-        .t-horizontal_scrollable{ 
-            width: 100%;
-            margin-bottom: 3em;
-        }
 
-        .t-icon_image{
-            margin: 30vw 30vw;
-        }
+/* mobile only */
 
-        #sidebar{
-            position: relative;
-            margin-bottom: 3em;
-            margin-left: 1em;
-        }
+@media (max-width: 767.98px) {
+    .t-horizontal_scrollable {
+        width: 100%;
+        margin-bottom: 3em;
     }
-
-    /* tablet only */
-    @media (min-width: 768px) and (max-width: 1199.98px){
-        
-        .t-icon_image{
-            margin: 22vw 22vw;
-        }
-
-        .t-horizontal_scrollable{
-            width: 72vw;
-        }
-
-        #sidebarposition{
-            padding-top: 20vh;
-            margin-left: 2em;
-        }
+    .t-icon_image {
+        margin: 30vw 30vw;
     }
-
-    /* desktop only */
-    @media (min-width: 1199.98px){ 
-
-        .t-icon_image{
-            margin: 15vw 15vw;
-        }
-
-        #sidebarposition{
-            padding-top: 20vh;
-            padding-left: 12vw;
-        }
+    #sidebar {
+        position: relative;
+        margin-bottom: 3em;
+        margin-left: 1em;
     }
+}
 
-    /* tablet AND desktop */
-    @media (min-width: 768px) {
-        .t-fixed_top{
-            z-index: 999;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
+/* tablet only */
 
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .t-icon_image {
+        margin: 22vw 22vw;
     }
+    .t-horizontal_scrollable {
+        width: 72vw;
+    }
+    #sidebarposition {
+        padding-top: 20vh;
+        margin-left: 2em;
+    }
+}
+
+/* desktop only */
+
+@media (min-width: 1199.98px) {
+    .t-icon_image {
+        margin: 15vw 15vw;
+    }
+    #sidebarposition {
+        padding-top: 20vh;
+        padding-left: 12vw;
+    }
+}
+
+/* tablet AND desktop */
+
+@media (min-width: 768px) {
+    .t-fixed_top {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
