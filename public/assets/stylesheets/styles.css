@@ -6,7 +6,7 @@ body {
     overflow-x: clip;
     margin-top: 15vh;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #38405f;
+    background-color: #1E2233;
 }
 
 a {
@@ -68,6 +68,8 @@ h5 {
 
 .card:hover {
     background-color: #ffffff;
+    border-width: 1em;
+    border-color: ;
 }
 
 /* IDs */
@@ -81,9 +83,11 @@ h5 {
         width: 100%;
         margin-bottom: 3em;
     }
-    .t-icon_image {
-        margin: 30vw 30vw;
+    .card {
+        width: 60vw;
+        height: 60vw;
     }
+
     #sidebar {
         position: relative;
         margin-bottom: 3em;
@@ -94,9 +98,11 @@ h5 {
 /* tablet only */
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-    .t-icon_image {
-        margin: 22vw 22vw;
+    .card {
+        width: 44vw;
+        height:  44vw;
     }
+
     .t-horizontal_scrollable {
         width: 72vw;
     }
@@ -109,12 +115,14 @@ h5 {
 /* desktop only */
 
 @media (min-width: 1199.98px) {
-    .t-icon_image {
-        margin: 15vw 15vw;
+    .card {
+        width: 30vw;
+        height: 30vw;
     }
+    
     #sidebarposition {
         padding-top: 20vh;
-        padding-left: 12vw;
+        padding-left: 8em;
     }
 }
 
