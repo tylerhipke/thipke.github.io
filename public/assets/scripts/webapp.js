@@ -81,26 +81,70 @@ function renderArticle(id) {
     for (i = 0; i < articleLength; i++) {
         console.log(thisArticle[i]);
         var blockType = thisArticle[i].type;
-        console.log(blockType);
+        console.log("on id number " + i);
+        switch (blockType) {
+            case "header":
+                console.log("header initialized");
+                renderHeaderBlock(thisArticle[i]);
+                break;
+            case "subheader":
+                console.log("subheader initialized");
+                renderSubheaderBlock(thisArticle[i]);
+                break;
+            case "image":
+                console.log("image initialized");
+                renderImageBlock(thisArticle[i]);
+                break;
+            case "text":
+                console.log("text initialized");
+                renderTextBlock(thisArticle[i]);
+                break;
+            case "gallery":
+                console.log("gallery initialized");
+                renderImageBlock(thisArticle[i]);
+                break;
+        };
     }
 };
 
-function renderHeaderBlock(){
+function renderHeaderBlock(article) {
+    console.log("header render function activated");
+    $('#blockrenderinput').append('<div class="row mt-2">' 
+        + '<div class="col-12">'
+        + '<h3 class="t-card_header_font">' 
+        + article.content 
+        + '</h3>' + '</div>' + '</div>'
+    );
+}
+
+function renderSubheaderBlock(article) {
+    console.log("subhead render function activated");
+    $('#blockrenderinput').append('<div class="row">' 
+        + '<div class="col-12">'
+        + '<h6 style="color: #DCE2F7;">' 
+        + article.content 
+        + '</h6>' + '</div>' + '</div>'
+    );
+}
+
+function renderImageBlock(article) {
+    console.log("img render function activated");
+    $('#blockrenderinput').append('<div class="row mt-2">' 
+        + '<div class="col-6">'
+        + '<img src=' 
+        + article.content[0] 
+        + ' class="img-fluid">' 
+        + '</div>' 
+        + '<div class="col-6">'
+        + '<p>' + article.content[1] + '</p>'
+        + '</div>' + '</div>'
+    );
+}
+
+function renderTextBlock() {
 
 }
 
-function renderSubheaderBlock(){
-
-}
-
-function renderImageBlock(){
-
-}
-
-function renderTextBlock(){
-
-}
-
-function renderGalleryBlock(){
+function renderGalleryBlock() {
 
 }
