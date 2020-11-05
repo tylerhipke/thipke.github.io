@@ -11,10 +11,10 @@ const database = function () {
         { useNewUrlParser: true ,
           useUnifiedTopology: true }
     ).then(function(){
-        console.log('connected to database')
+        console.log('connected to mongo')
     })
     .catch(function(error){
-        console.log('ERROR\n', error);
+        console.log('ERROR!!!\n\n\n', error);
         process.exit();
     });
 }

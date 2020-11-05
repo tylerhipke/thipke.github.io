@@ -1,19 +1,9 @@
-// portfolio app script
+//webapp handlers
 
+document.addEventListener("DOMContentLoaded", function () {
+    readLink();
+});
 
-// get card width
-// var element = document.getElementById('leadingcard');
-// var positionInfo = element.getBoundingClientRect();
-// var cardWidth = positionInfo.width + "px";
-
-// var cardWidth 
-
-//set card height to width
-//document.getElementById("leadingcard").style["height"] = cardWidth ;
-
-// var cardElement = document.getElementsByClassName('t-code_card');
-
-// start code reading links
 function readLink() {
     $('a').click(function () {
         var href = $(this).attr("href");
@@ -24,30 +14,34 @@ function readLink() {
             console.log("not contact link so lets read database", href);
         }
     });
+    $('#testtrigger').click(function () {
+        enterArticle();
+    })
+    $('#gohome').click(function () {
+        exitArticle();
+    })
 }
 
-function showLoading(){
+function enterArticle(type) {
+    $('#homeblock').removeClass('t-visible').addClass('t-hidden');
+    setTimeout(function () {
+        $('#homeblock').toggle();
+        $('#articleblock').toggle();
+    }, 250)
 
+    setTimeout(function () {
+        $('#articleblock').removeClass('t-hidden').addClass('t-visible');
+    }, 400);
 }
 
-function showHomeSidebar(){
+function exitArticle(type) {
+    $('#articleblock').removeClass('t-visible').addClass('t-hidden');
+    setTimeout(function () {
+        $('#articleblock').toggle();
+        $('#homeblock').toggle();
+    }, 250)
 
+    setTimeout(function () {
+        $('#homeblock').removeClass('t-hidden').addClass('t-visible');
+    }, 400);
 }
-
-function showArticleSidebar(){
-    
-}
-
-// pull id from link, show loading screen , change header to dark color, and attempt to pull data from database
-
-// if entry exists, drop all elements and display loading screen, set loading bar to zero
-// if entry doesnt exist, show error display and go back home
-// download database entry from server
-// count how many blocks are needed
-// set block amount to progress bar amount
-// render each block, when its done increase progress bar
-// when progress bar is 100, drop loading screen and show article
-
-// link clicked- pull js code and use for statement to read each block, then call specific render method
-
-// methods for different render calls
