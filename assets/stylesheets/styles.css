@@ -2,29 +2,12 @@
 
 /* IMPORTS */
 
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('./assets/fonts/helneue.ttf');
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('./assets/fonts/helneue.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Didot';
-    src: url('./assets/fonts/didotitalic.ttf');
-    font-style: italic;
-}
-
 /* TAGS */
 
 body {
     overflow-x: clip;
     margin-top: 15vh;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Rubik, Arial, sans-serif;
     font-weight: 400;
     background-color: #111b29;
 }
@@ -76,7 +59,7 @@ h5 {
 }
 
 .display-1 {
-    font-family: Didot, serif;
+    font-family: Didot, 'Playfair Display', serif;
     font-style: italic;
     color: #97bbd8;
 }
