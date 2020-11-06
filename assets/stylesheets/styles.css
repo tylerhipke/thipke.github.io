@@ -2,6 +2,23 @@
 
 /* IMPORTS */
 
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/helneue.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/helneue.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('/assets/fonts/didotitalic.ttf');
+    font-style: italic;
+}
+
 /* TAGS */
 
 body {
