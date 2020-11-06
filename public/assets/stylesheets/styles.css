@@ -107,8 +107,11 @@ h5 {
 
     #sidebar {
         position: relative;
-        margin-bottom: 3em;
         margin-left: 1em;
+    }
+
+    #gohome{
+        margin-top: 3em;
     }
 }
 

@@ -16,6 +16,27 @@
     <div class="flex-container my-auto">
         <div class="row text-white" style="margin: 0 0">
 
+            <!-- contact modal -->
+            <div id="contactModal" class="modal fade text-dark" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title t-card_header_font ml-auto">CONTACT</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="button" class="btn btn-secondary rounded-0"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- sidebar -->
             <aside id="sidebar" class="col-sm-3">
                 <div class="row t-fixed_top">
@@ -26,23 +47,28 @@
                                 <br>
                                 HIPKE
                             </h1>
-                            <h5 class="" style="font-size: 1em;">
-                                full-stack web dev.
-                                <br>
-                                pro hackintosh builder &
-                                <br>
-                                adobe cc connoisseur.
-                            </h5>
                         </div>
-                        <div class="">
-                            <h5 style="font-size: 1em;">
-                                san diego, california:
-                                <br>
-                                <a href="#contact" class="">contact and links.</a>
-                            </h5>
+                        <div id="sidebarcontent" class="t-visible">
+                            <div>
+                                <h5 class="" style="font-size: 1em;">
+                                    full-stack web dev.
+                                    <br>
+                                    pro hackintosh builder &
+                                    <br>
+                                    adobe cc connoisseur.
+                                </h5>
+                            </div>
+                            <div class="">
+                                <h5 style="font-size: 1em;">
+                                    san francisco, california:
+                                    <br>
+                                    <a id="contact" href="#" class="">contact and links.</a>
+                                </h5>
+                            </div>
                         </div>
-                        <button id="testtrigger">ENTER ARTICLE MODE</button>
-                        <button id="gohome">GO HOME</button>
+                        <div id="sidebarnavigate" class="t-hidden" style="display: none;">
+                            <button id="gohome" class="btn btn-secondary w-50 t-card_header_font rounded-0">back</button>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -60,21 +86,21 @@
                     <div class="t-horizontal_scrollable">
                         <div class="row">
                             <div class="d-flex flex-nowrap mx-3">
-                                <div class="card rounded-0 text-dark mr-4 shadow-lg">
+                                <div id="1" class="card rounded-0 text-dark mr-4 shadow-lg">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
                                         <h5 class="card-title t-card_header_font">TH: PORTFOLIO</h5>
                                     </div>
                                 </div>
-                                <div class="card rounded-0 text-dark mr-4">
+                                <div id="2" class="card rounded-0 text-dark mr-4">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
                                         <h5 class="card-title t-card_header_font">NICOLE FRANK: TWE</h5>
                                     </div>
                                 </div>
-                                <div class="card rounded-0 text-dark mr-4">
+                                <div id="3" class="card rounded-0 text-dark mr-4">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
@@ -96,14 +122,14 @@
                     <div class="t-horizontal_scrollable">
                         <div class="row">
                             <div class="d-flex flex-nowrap mx-3">
-                                <div class="card rounded-0 text-dark mr-4">
+                                <div id="4" class="card rounded-0 text-dark mr-4">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
                                         <h5 class="card-title t-card_header_font">NICOLE FRANK: TWE</h5>
                                     </div>
                                 </div>
-                                <div class="card rounded-0 text-dark mr-4">
+                                <div id="5" class="card rounded-0 text-dark mr-4">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
@@ -125,7 +151,7 @@
                     <div class="t-horizontal_scrollable">
                         <div class="row">
                             <div class="d-flex flex-nowrap mx-3">
-                                <div class="card rounded-0 text-dark mr-4">
+                                <div id="6" class="card rounded-0 text-dark mr-4">
                                     <img src="./assets/content/icons/nf-logo-icon_650x650.png"
                                         class="card-img rounded-0 t-icon_image m-auto" alt="...">
                                     <div class="t-custom_card_overlay">
