@@ -226,6 +226,25 @@ var articles = {
         1: {
             type: "subheader",
             content: ["Wholesale PPE distributor"]
+        },
+        2: {
+            type: "image",
+            content: ["./assets/content/code/rk/rk.png", "Professionally managed website, written and designed to inspire confidence in the quality of the products."]
+        }
+    },
+    3: {        //CLIC APPAREL
+        0: {
+            type: "header",
+            content: ["Clic Apparel"]
+        },
+        1: {
+            type: "subheader",
+            content: ["Athletic Wear commissioned for Logos"]
+        },
+        2: {
+            type: "gallery",
+            content: ["./assets/content/code/clic/1.png", "./assets/content/code/clic/2.png", 
+            "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
         }
     }
 }
