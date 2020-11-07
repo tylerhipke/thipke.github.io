@@ -161,7 +161,7 @@ function renderGalleryBlock(article) {
 };
 
 var articles = {
-    0: {
+    0: {                    //Nicole Frank TWE
         0: {
             type: "header",
             content: ["Nicole Frank: The Wardrobe Evolution"]
@@ -196,18 +196,36 @@ var articles = {
             "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
         },
     },
-    1: {
+    1: {                //TH PORTFOLIO
         0: {
             type: "header",
             content: ["Tyler Hipke Portfolio"]
         },
         1: {
             type: "subheader",
-            content: ["Personal Portfolio, written from scratch to push boundaries of how content should be presented, following modern design trends."]
+            content: ["Personal Portfolio, written from scratch to push boundaries of how content should be presented. Inspired by Metro Design."]
         },
         2: {
             type: "image",
-            content: [""]
+            content: ["./assets/content/code/th/outline.png", "Here I outline how basics on how the code should function prior to coding."]
+        },
+        3: {
+            type: "image",
+            content: ["./assets/content/code/th/wireframe.png", "A wireframe mockup was made in Photoshop to ensure a cohesive vision was made prior to coding."]
+        },
+        4: {
+            type: "image",
+            content: ["./assets/content/code/th/switchlogic.png", "These articles are divided up by blocks, and rendered from the text on the fly."]
+        }
+    },
+    2: {            //RK MEDIC LINE
+        0: {
+            type: "header",
+            content: ["RK Medic Line"]
+        },
+        1: {
+            type: "subheader",
+            content: ["Wholesale PPE distributor"]
         }
     }
 }
