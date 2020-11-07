@@ -43,6 +43,7 @@ h5 {
 .t-icon_image {
     width: 64px;
     max-height: 64px;
+    object-fit: scale-down;
 }
 
 .t-horizontal_scrollable {

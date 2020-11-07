@@ -4,35 +4,6 @@
 //
 //
 
-var articles = {
-    0: {
-        0: {
-            type: "header",
-            content: ["Nicole Frank TWE"]
-        },
-        1: {
-            type: "subheader",
-            content: ["full-stack shopify project"]
-        },
-        2: {
-            type: "text",
-            content: ["nicole frank twe here shows the different options blah blah"]
-        },
-        3: {
-            type: "image",
-            content: ["./assets/graphics/blackbox.png", "image text here"]
-        },
-        4: {
-            type: "gallery",
-            content: 
-                ["./assets/graphics/blackbox.png",
-                "./assets/graphics/blackbox.png",
-                "./assets/graphics/blackbox.png",
-                "./assets/graphics/blackbox.png"]
-        }
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     linkEvents();
 });
@@ -47,7 +18,7 @@ function linkEvents() {
     $('#gohome').click(function () {
         exitArticle();
     })
-    $('.card').click(function(){
+    $('.card').click(function () {
         var thisClickedID = ($(this).attr('id'));
         thisClickedID -= 1;
         console.log(thisClickedID);
@@ -75,8 +46,8 @@ function enterArticle(type) {
 };
 
 function exitArticle(type) {
-    $('#articleblock').removeClass('t-visible').addClass('t-hidden');
     $('#sidebarnavigate').removeClass('t-visible').addClass('t-hidden');
+    $('#articleblock').removeClass('t-visible').addClass('t-hidden');
     setTimeout(function () {
         $('#articleblock').toggle();
         $('#homeblock').toggle();
@@ -175,16 +146,68 @@ function renderTextBlock(article) {
 }
 
 function renderGalleryBlock(article) {
-    console.log(article.content.length + 
+    console.log(article.content.length +
         " images in this gallery, gallery render activatied");
     var thisDivID = Math.floor(Math.random() * 1000) + 200;
     $('#blockrenderinput').append(
-        '<div id=' + thisDivID +' class="row"></div>'
+        '<div id=' + thisDivID + ' class="row"></div>'
     );
 
-    for(i=0; i < article.content.length; i++){
-        $('#' + thisDivID).append('<div class="col-md-6 mt-2">' 
-        + '<img src=' + article.content[i] + ' class="img-fluid">'
-        + '</div>');
+    for (i = 0; i < article.content.length; i++) {
+        $('#' + thisDivID).append('<div class="col-6 mt-2">'
+            + '<img src=' + article.content[i] + ' class="img-fluid">'
+            + '</div>');
     };
 };
+
+var articles = {
+    0: {
+        0: {
+            type: "header",
+            content: ["Nicole Frank: The Wardrobe Evolution"]
+        },
+        1: {
+            type: "subheader",
+            content: ["Full-Stack Shopify eCommerce Project"]
+        },
+        2: {
+            type: "text",
+            content: [
+            "Listed below are various aspects of projects that I have worked on.  Changes are made to existing code."]
+        },
+        3: {
+            type: "image",
+            content: ["./assets/content/code/nftwe/twe_buttons.png", 
+            "Color swatch buttons.  These take in JSON response and display different color options with a for loop.  The tabs below the Add to Cart button are custom as well."]
+        },
+        4: {
+            type: "image",
+            content: ["./assets/content/code/nftwe/twe_swatch.png", 
+            "+ more colors. Code displays text when product has multiple variants."]
+        },
+        5: {
+            type: "image",
+            content: ["./assets/content/code/nftwe/twe_offsetlogo.png", 
+            "Custom Logo offset. This template has limited navbar customization.  As such, I found a workaround by injecting custom CSS with position: relative to move the logo into a custom position because of its awkward size."]
+        },
+        6: {
+            type: "image",
+            content: ["./assets/content/code/nftwe/twe_custompage.png", 
+            "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
+        },
+    },
+    1: {
+        0: {
+            type: "header",
+            content: ["Tyler Hipke Portfolio"]
+        },
+        1: {
+            type: "subheader",
+            content: ["Personal Portfolio, written from scratch to push boundaries of how content should be presented, following modern design trends."]
+        },
+        2: {
+            type: "image",
+            content: [""]
+        }
+    }
+}
