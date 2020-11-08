@@ -4,7 +4,7 @@ This is a project designed to show the different code and projects that I have w
 
 ##### WIREFRAME
 
-Prior to coding, a wireframe was made.  This shows the UX ideas that we want  in its most conceptual form.  The actual product will look very similar but include concepts that increase usability, at the cost of aesthetics.  This is similar to that of concepts cars; the final product must include features that the concept never intendee to include.
+Prior to coding, a wireframe was made.  This shows the UX ideas that we want  in its most conceptual form.  The actual product will look very similar but include concepts that increase usability, at the cost of aesthetics.  This is similar to that of concepts cars; the final product must include features that the concept never intended to include.
 
 ![wireframe](./assets/content/code/th/wireframe.png)
 
