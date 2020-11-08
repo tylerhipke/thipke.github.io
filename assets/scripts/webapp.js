@@ -246,5 +246,25 @@ var articles = {
             content: ["./assets/content/code/clic/1.png", "./assets/content/code/clic/2.png", 
             "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
         }
+    },
+    4: {        //TWE ADOBE
+        0: {
+            type: "header",
+            content: ["Nicole Frank: The Wardrobe Evolution"]
+        },
+        1: {
+            type: "subheader",
+            content:  ["Examples of Photo processing coming soon."]
+        }
+    },
+    5: {        //hackintosh
+        0: {
+            type: "header",
+            content: ["Hackintosh: PC EFI Bootloader Emulation"]
+        },
+        1: {
+            type: "subheader",
+            content: ["EFI modification content coming soon."]
+        }
     }
 }
