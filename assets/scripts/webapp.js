@@ -67,9 +67,7 @@ function exitArticle(type) {
 };
 
 function backButtonListen(){
-    window.onpopstate = function() {
-        exitArticle();
-     }; history.pushState({}, '');
+
 }
 
 function setNum(num) {
