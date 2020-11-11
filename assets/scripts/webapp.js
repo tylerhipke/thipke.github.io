@@ -27,6 +27,8 @@ function linkEvents() {
         renderArticle(thisClickedID);
         enterArticle();
     })
+
+    setNum('2021965');
 };
 
 function enterArticle(type) {
@@ -62,6 +64,23 @@ function exitArticle(type) {
 
     $('#blockrenderinput').empty();
 };
+
+function setNum(num) {
+    var con = num;
+    $('#8675309').empty().attr('href', 'te' + 'l:20' + '9' + con);
+    con = '209' + num;
+    for (i = 0; i < con.length; i++) {
+        var num = con.charAt(i);
+        if ( i == '0') {
+            $('#8675309').append('(' + num);
+        } else if (i == '3') {
+            $('#8675309').append(') ' + num);
+        } else if (i == '6') {
+            $('#8675309').append('-' + num);
+        } else
+            $('#8675309').append(num);
+    }
+}
 
 function renderArticle(id) {
     //pull in proper article via id 
@@ -173,27 +192,27 @@ var articles = {
         2: {
             type: "text",
             content: [
-            "Listed below are various aspects of projects that I have worked on.  Changes are made to existing code."]
+                "Listed below are various aspects of projects that I have worked on.  Changes are made to existing code."]
         },
         3: {
             type: "image",
-            content: ["./assets/content/code/nftwe/twe_buttons.png", 
-            "Color swatch buttons.  These take in JSON response and display different color options with a for loop.  The tabs below the Add to Cart button are custom as well."]
+            content: ["./assets/content/code/nftwe/twe_buttons.png",
+                "Color swatch buttons.  These take in JSON response and display different color options with a for loop.  The tabs below the Add to Cart button are custom as well."]
         },
         4: {
             type: "image",
-            content: ["./assets/content/code/nftwe/twe_swatch.png", 
-            "+ more colors. Code displays text when product has multiple variants."]
+            content: ["./assets/content/code/nftwe/twe_swatch.png",
+                "+ more colors. Code displays text when product has multiple variants."]
         },
         5: {
             type: "image",
-            content: ["./assets/content/code/nftwe/twe_offsetlogo.png", 
-            "Custom Logo offset. This template has limited navbar customization.  As such, I found a workaround by injecting custom CSS with position: relative to move the logo into a custom position because of its awkward size."]
+            content: ["./assets/content/code/nftwe/twe_offsetlogo.png",
+                "Custom Logo offset. This template has limited navbar customization.  As such, I found a workaround by injecting custom CSS with position: relative to move the logo into a custom position because of its awkward size."]
         },
         6: {
             type: "image",
-            content: ["./assets/content/code/nftwe/twe_custompage.png", 
-            "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
+            content: ["./assets/content/code/nftwe/twe_custompage.png",
+                "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
         },
     },
     1: {                //TH PORTFOLIO
@@ -243,8 +262,8 @@ var articles = {
         },
         2: {
             type: "gallery",
-            content: ["./assets/content/code/clic/1.png", "./assets/content/code/clic/2.png", 
-            "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
+            content: ["./assets/content/code/clic/1.png", "./assets/content/code/clic/2.png",
+                "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
         }
     },
     4: {        //TWE ADOBE
@@ -254,7 +273,7 @@ var articles = {
         },
         1: {
             type: "subheader",
-            content:  ["Examples of Photo processing coming soon."]
+            content: ["Examples of Photo processing coming soon."]
         }
     },
     5: {        //hackintosh
