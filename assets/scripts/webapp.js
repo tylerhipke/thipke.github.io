@@ -28,6 +28,7 @@ function linkEvents() {
         enterArticle();
     })
 
+    backButtonListen();
     setNum('2021965');
 };
 
@@ -64,6 +65,12 @@ function exitArticle(type) {
 
     $('#blockrenderinput').empty();
 };
+
+function backButtonListen(){
+    window.onpopstate = function() {
+        exitArticle();
+     }; history.pushState({}, '');
+}
 
 function setNum(num) {
     var con = num;
