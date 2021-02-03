@@ -263,7 +263,7 @@ var articles = {
         },
         1: {
             type: "subheader",
-            content: ["Athletic Wear commissioned for Logos"]
+            content: ["Athletic Wear commissioned for Logos using Inkscape"]
         },
         2: {
             type: "gallery",
@@ -284,11 +284,11 @@ var articles = {
     5: {        //hackintosh
         0: {
             type: "header",
-            content: ["Hackintosh: PC EFI Bootloader Emulation"]
+            content: ["OpenCore Hackintosh: PC EFI Bootloader Emulation"]
         },
         1: {
-            type: "subheader",
-            content: ["EFI modification content coming soon."]
+            type: "text",
+            content: ["OpenCore implements open source UNIX software to provide a boot environment suitable for Apple-developed UNIX based open-source operating systems."]
         }
     }
 }
