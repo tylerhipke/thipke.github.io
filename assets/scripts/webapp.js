@@ -284,11 +284,11 @@ var articles = {
     5: {        //hackintosh
         0: {
             type: "header",
-            content: ["OpenCore Hackintosh: PC EFI Bootloader Emulation"]
+            content: ["OpenCore PC EFI Bootloader Emulation"]
         },
         1: {
             type: "text",
-            content: ["OpenCore implements open source UNIX software to provide a boot environment suitable for Apple-developed UNIX based open-source operating systems."]
+            content: ["OpenCore implements open source UNIX software to provide a boot environment for x86 PC systems."]
         }
     }
 }
