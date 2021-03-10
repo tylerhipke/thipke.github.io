@@ -220,7 +220,13 @@ var articles = {
                 "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
         },
     },
-    1: {                //TH PORTFOLIO
+    1: {
+        0: {
+            type: "header",
+            content: ["Greython Construction"]
+        }
+    },
+    2: {                //TH PORTFOLIO
         0: {
             type: "header",
             content: ["Tyler Hipke Portfolio"]
@@ -242,7 +248,7 @@ var articles = {
             content: ["./assets/content/code/th/switchlogic.png", "These articles are divided up by blocks, and rendered from the text on the fly."]
         }
     },
-    2: {            //RK MEDIC LINE
+    3: {            //RK MEDIC LINE
         0: {
             type: "header",
             content: ["RK Medic Line"]
@@ -256,7 +262,7 @@ var articles = {
             content: ["./assets/content/code/rk/rk.png", "Professionally managed website, written and designed to inspire confidence in the quality of the products."]
         }
     },
-    3: {        //CLIC APPAREL
+    4: {        //CLIC APPAREL
         0: {
             type: "header",
             content: ["Clic Apparel"]
@@ -271,7 +277,7 @@ var articles = {
                 "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
         }
     },
-    4: {        //TWE ADOBE
+    5: {        //TWE ADOBE
         0: {
             type: "header",
             content: ["Nicole Frank: The Wardrobe Evolution"]
@@ -281,7 +287,7 @@ var articles = {
             content: ["Examples of Photo processing coming soon."]
         }
     },
-    5: {        //hackintosh
+    6: {        //hackintosh
         0: {
             type: "header",
             content: ["OpenCore PC EFI Bootloader Emulation"]
