@@ -212,26 +212,30 @@ var articles = {
             content: ["Full-Stack Shopify eCommerce Project"]
         },
         2: {
+            type: "link",
+            content: ["Visit Nicole Frank Now", "https://www.nicolefranktwe.com"]
+        },
+        3: {
             type: "text",
             content: [
                 "Listed below are various aspects of projects that I have worked on.  Changes are made to existing code."]
         },
-        3: {
+        4: {
             type: "image",
             content: ["./assets/content/code/nftwe/twe_buttons.png",
                 "Color swatch buttons.  These take in JSON response and display different color options with a for loop.  The tabs below the Add to Cart button are custom as well."]
         },
-        4: {
+        5: {
             type: "image",
             content: ["./assets/content/code/nftwe/twe_swatch.png",
                 "+ more colors. Code displays text when product has multiple variants."]
         },
-        5: {
+        6: {
             type: "image",
             content: ["./assets/content/code/nftwe/twe_offsetlogo.png",
                 "Custom Logo offset. This template has limited navbar customization.  As such, I found a workaround by injecting custom CSS with position: relative to move the logo into a custom position because of its awkward size."]
         },
-        6: {
+        7: {
             type: "image",
             content: ["./assets/content/code/nftwe/twe_custompage.png",
                 "Shopify does not allow you to merge multiple collections.  Here, I used a modified template to congregate different collections on the same page, giving the impression of a custom collection."]
@@ -244,7 +248,7 @@ var articles = {
         },
         1: {
             type: "link",
-            content: ["Greython Construction", "https://www.greython.com"]
+            content: ["Visit Greython Now", "https://www.greython.com"]
         }
     },
     2: {                //TH PORTFOLIO
