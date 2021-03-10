@@ -121,6 +121,10 @@ function renderArticle(id) {
                 console.log("gallery initialized");
                 renderGalleryBlock(thisArticle[i]);
                 break;
+            case "link":
+                console.log("link inistialized");
+                renderLinkBlock(thisArticle[i])
+                break;
         };
     }
 };
@@ -184,6 +188,19 @@ function renderGalleryBlock(article) {
     };
 };
 
+function renderLinkBlock(article) {
+    console.log("subhead render function activated");
+    $('#blockrenderinput').append('<div class="row">'
+        + '<div class="col-12">'
+        + '<a target="_blank" href=' 
+        + article.content[1]
+        + '>'
+        + '<h6 style="color: #DCE2F7;">'
+        + article.content[0]
+        + '</a>' + '</h6>' + '</div>' + '</div>'
+    );
+}
+
 var articles = {
     0: {                    //Nicole Frank TWE
         0: {
@@ -224,6 +241,10 @@ var articles = {
         0: {
             type: "header",
             content: ["Greython Construction"]
+        },
+        1: {
+            type: "link",
+            content: ["Greython Construction", "https://www.greython.com"]
         }
     },
     2: {                //TH PORTFOLIO
