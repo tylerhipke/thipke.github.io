@@ -318,8 +318,12 @@ var articles = {
             content: ["OpenCore PC EFI Bootloader Emulation"]
         },
         1: {
-            type: "text",
+            type: "subheader",
             content: ["OpenCore implements open source UNIX software to provide a boot environment for x86 PC systems."]
+        },
+        2: {
+            type: "link",
+            content: ["Public GitHub Access", "https://github.com/acidanthera/OpenCorePkg"]
         }
     }
 }
