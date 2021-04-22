@@ -45,7 +45,7 @@ function enterArticle(type) {
     setTimeout(function () {
         $('#articleblock').removeClass('t-hidden').addClass('t-visible');
         $('#sidebarnavigate').removeClass('t-hidden').addClass('t-visible');
-    }, 400);
+    }, 300);
 };
 
 function exitArticle(type) {
@@ -56,14 +56,15 @@ function exitArticle(type) {
         $('#homeblock').toggle();
         $('#sidebarnavigate').toggle();
         $('#sidebarcontent').toggle();
+        $('#blockrenderinput').empty();
+
     }, 250)
 
     setTimeout(function () {
         $('#homeblock').removeClass('t-hidden').addClass('t-visible');
         $('#sidebarcontent').removeClass('t-hidden').addClass('t-visible');
-    }, 400);
+    }, 300);
 
-    $('#blockrenderinput').empty();
 };
 
 function backButtonListen(){

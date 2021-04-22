@@ -96,13 +96,13 @@ h5 {
 .t-visible{
     opacity: 1;
     visibility: visible;
-    transition: .25s;
+    transition: all .25s;
 }
 
 .t-hidden{
     opacity: 0;
     visibility: hidden;
-    transition: .25s;
+    transition: all .25s;
 }
 /* IDs */
 #homeblock{
