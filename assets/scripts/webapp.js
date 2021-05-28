@@ -193,12 +193,12 @@ function renderLinkBlock(article) {
     console.log("subhead render function activated");
     $('#blockrenderinput').append('<div class="row">'
         + '<div class="col-12">'
-        + '<a target="_blank" href=' 
+        + '<a target="_blank" class="btn btn-secondary rounded-0 mt-2" href=' 
         + article.content[1]
         + '>'
-        + '<h6 style="color: #DCE2F7;">'
+        + ''
         + article.content[0]
-        + '</a>' + '</h6>' + '</div>' + '</div>'
+        + '' + '</a>' + '</div>' + '</div>'
     );
 }
 
@@ -206,7 +206,7 @@ var articles = {
     0: {                    //Nicole Frank TWE
         0: {
             type: "header",
-            content: ["Nicole Frank: The Wardrobe Evolution"]
+            content: ["NICOLE FRANK: TWE"]
         },
         1: {
             type: "subheader",
@@ -245,7 +245,7 @@ var articles = {
     1: {
         0: {
             type: "header",
-            content: ["Greython Construction"]
+            content: ["GREYTHON CONSTRUCTION"]
         },
         1: {
             type: "link",
@@ -255,29 +255,25 @@ var articles = {
     2: {                //TH PORTFOLIO
         0: {
             type: "header",
-            content: ["Tyler Hipke Portfolio"]
+            content: ["VYBE"]
         },
         1: {
             type: "subheader",
-            content: ["Personal Portfolio, written from scratch to push boundaries of how content should be presented. Inspired by Metro Design."]
+            content: ["Visualizer, written with React.js"]
         },
         2: {
-            type: "image",
-            content: ["./assets/content/code/th/outline.png", "Here I outline how basics on how the code should function prior to coding."]
+            type: "link",
+            content: ["Visit VYBE Now", "https://project-vybe.herokuapp.com"]
         },
         3: {
-            type: "image",
-            content: ["./assets/content/code/th/wireframe.png", "A wireframe mockup was made in Photoshop to ensure a cohesive vision was made prior to coding."]
-        },
-        4: {
-            type: "image",
-            content: ["./assets/content/code/th/switchlogic.png", "These articles are divided up by blocks, and rendered from the text on the fly."]
+            type: "link",
+            content: ["Github Link","https://github.com/militara106/PROJECT-3"]
         }
     },
     3: {            //RK MEDIC LINE
         0: {
             type: "header",
-            content: ["RK Medic Line"]
+            content: ["RK MEDIC LINK"]
         },
         1: {
             type: "subheader",
@@ -291,7 +287,7 @@ var articles = {
     4: {        //CLIC APPAREL
         0: {
             type: "header",
-            content: ["Clic Apparel"]
+            content: ["CLIC APPAREL"]
         },
         1: {
             type: "subheader",
@@ -316,7 +312,7 @@ var articles = {
     6: {        //hackintosh
         0: {
             type: "header",
-            content: ["OpenCore PC EFI Bootloader Emulation"]
+            content: ["OPENCORE PC EFI EMULATION"]
         },
         1: {
             type: "subheader",
