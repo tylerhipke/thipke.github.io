@@ -20,11 +20,20 @@ function linkEvents() {
     })
     $('.card').click(function () {
         var thisClickedID = ($(this).attr('id'));
+        var visualElement = document.getElementById(thisClickedID);
+        var isVisual = false;
+
         thisClickedID -= 1;
         console.log(thisClickedID);
+        console.log("visualElement", visualElement);
+        
+        if (visualElement.classList.contains('visual-content')){
+            isVisual = true;
+        };
+        console.log("isVisual", isVisual);
 
         $('#blockrenderinput').empty();
-        renderArticle(thisClickedID);
+        renderArticle(thisClickedID, isVisual);
         enterArticle();
     })
 
@@ -32,7 +41,7 @@ function linkEvents() {
     setNum('2021965');
 };
 
-function enterArticle(type) {
+function enterArticle(type, isVisual) {
     $('#homeblock').removeClass('t-visible').addClass('t-hidden');
     $('#sidebarcontent').removeClass('t-visible').addClass('t-hidden');
     setTimeout(function () {
