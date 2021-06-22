@@ -26,15 +26,14 @@ function linkEvents() {
         thisClickedID -= 1;
         console.log(thisClickedID);
         console.log("visualElement", visualElement);
-        
+
         if (visualElement.classList.contains('visual-content')){
             isVisual = true;
         };
-        console.log("isVisual", isVisual);
 
         $('#blockrenderinput').empty();
-        renderArticle(thisClickedID, isVisual);
-        enterArticle();
+        renderArticle(thisClickedID);
+        enterArticle(isVisual);
     })
 
     backButtonListen();
@@ -42,6 +41,8 @@ function linkEvents() {
 };
 
 function enterArticle(type, isVisual) {
+    console.log("entering article, is it viusal?", isVisual);
+
     $('#homeblock').removeClass('t-visible').addClass('t-hidden');
     $('#sidebarcontent').removeClass('t-visible').addClass('t-hidden');
     setTimeout(function () {
