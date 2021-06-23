@@ -209,8 +209,8 @@ function renderGalleryBlock(article) {
     );
 
     for (j = 0; j < article.content.length; j++) {
-        $('#' + thisDivID).append('<div class="col-6 mt-2">'
-            + '<img src=' + article.content[i] + ' class="img-fluid">'
+        $('#' + thisDivID).append('<div class="col-md-6 mt-2">'
+            + '<img src=' + article.content[j] + ' class="img-fluid">'
             + '</div>' );
     };
 
