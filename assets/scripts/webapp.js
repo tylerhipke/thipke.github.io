@@ -33,15 +33,14 @@ function linkEvents() {
 
         $('#blockrenderinput').empty();
         renderArticle(thisClickedID);
-        enterArticle(isVisual);
+        enterArticle();
     })
 
     backButtonListen();
     setNum('2021965');
 };
 
-function enterArticle(type, isVisual) {
-    console.log("entering article, is it viusal?", isVisual);
+function enterArticle(type) {
 
     $('#homeblock').removeClass('t-visible').addClass('t-hidden');
     $('#sidebarcontent').removeClass('t-visible').addClass('t-hidden');
@@ -167,12 +166,12 @@ function renderSubheaderBlock(article) {
 function renderImageBlock(article) {
     console.log("img render function activated");
     $('#blockrenderinput').append('<div class="row mt-2">'
-        + '<div class="col-6">'
+        + '<div class="col-sm-6">'
         + '<img src='
         + article.content[0]
         + ' class="img-fluid">'
         + '</div>'
-        + '<div class="col-6">'
+        + '<div class="col-sm-6">'
         + '<p>' + article.content[1] + '</p>'
         + '</div>' + '</div>'
     );
@@ -184,7 +183,8 @@ function renderHeroBlock(article) {
         + '<div class="col-12">'
         + '<img src='
         + article.content[0]
-        + ' class="img-fluid">'
+        + ' class="img-fluid"'
+        + article.content[1] + '>'
         + '</div>'
         + '</div>'
     );
@@ -205,14 +205,16 @@ function renderGalleryBlock(article) {
         " images in this gallery, gallery render activatied");
     var thisDivID = Math.floor(Math.random() * 1000) + 200;
     $('#blockrenderinput').append(
-        '<div id=' + thisDivID + ' class="row"></div>'
+        '<div><div id=' + thisDivID + ' class="row"></div></div>'
     );
 
-    for (i = 0; i < article.content.length; i++) {
+    for (j = 0; j < article.content.length; j++) {
         $('#' + thisDivID).append('<div class="col-6 mt-2">'
             + '<img src=' + article.content[i] + ' class="img-fluid">'
-            + '</div>');
+            + '</div>' );
     };
+
+    console.log("ending article function");
 };
 
 function renderLinkBlock(article) {
@@ -323,17 +325,59 @@ var articles = {
             type: "gallery",
             content: ["./assets/content/code/clic/1.png", "./assets/content/code/clic/2.png",
                 "./assets/content/code/clic/3.png", "./assets/content/code/clic/4.png", "./assets/content/code/clic/5.png", "./assets/content/code/clic/6.png"]
+        },
+        3: {
+            type: "header",
+            content: ["test"]
         }
     },
     5: {        //TWE ADOBE
         0: {
             type: "header",
-            content: ["Nicole Frank: The Wardrobe Evolution"]
+            content: ["NICOLE FRANK: THE WARDROBE EVOLUTION"]
         },
         1: {
+            type: "text",
+            content: ["visual media"]
+        },
+        2: {
             type: "subheader",
-            content: ["Examples of Photo processing coming soon."]
+            content: ["FABRIC ICONOGRAPHY"]
+        },
+        3: {
+            type: "image",
+            content: ["./assets/content/twevisual/fabricicons.jpg", "created in AI and Inkscape"]
+        },
+        4: {
+            type: "header",
+            content: ["&nbsp"]
+        },
+        5: {
+            type: "subheader",
+            content: ["STYLE BOOK"]
+        },
+        6: {
+            type: "gallery",
+            content: ["./assets/content/twevisual/stylebook/1.jpeg", "./assets/content/twevisual/stylebook/4.jpeg", "./assets/content/twevisual/stylebook/2.jpeg","./assets/content/twevisual/stylebook/3.jpeg"]
+        },
+        7: {
+            type: "link",
+            content: ["continue style book","./assets/content/twevisual/twestylebook.pdf"]
+        },
+        8: {
+            type: "header",
+            content: ["&nbsp"]
+        },
+        9: {
+            type: "subheader",
+            content: ["PHOTOGRAPHY PRODUCTION"]
+        },
+        10: {
+            type: "gallery",
+            content: ["./assets/content/twevisual/chocprod.jpg","./assets/content/twevisual/chocedit.jpg"]
         }
+
+
     },
     6: {        //hackintosh
         0: {
@@ -352,7 +396,7 @@ var articles = {
     7: {  //iconography
         0: {
             type: "header",
-            content: ["RK Medic Line"]
+            content: ["RK MEDIC LINE"]
         },
         1: {
             type: "subheader",
