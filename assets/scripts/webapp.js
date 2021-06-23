@@ -319,7 +319,7 @@ var articles = {
         },
         1: {
             type: "subheader",
-            content: ["Athletic Wear commissioned for Logos using Inkscape"]
+            content: ["Client Commissioned Logos"]
         },
         2: {
             type: "gallery",
@@ -337,16 +337,16 @@ var articles = {
             content: ["NICOLE FRANK: THE WARDROBE EVOLUTION"]
         },
         1: {
-            type: "text",
-            content: ["visual media"]
+            type: "subheader",
+            content: ["&nbsp"]
         },
         2: {
             type: "subheader",
             content: ["FABRIC ICONOGRAPHY"]
         },
         3: {
-            type: "image",
-            content: ["./assets/content/twevisual/fabricicons.jpg", "created in AI and Inkscape"]
+            type: "gallery",
+            content: ["./assets/content/twevisual/fabric1.jpg", "./assets/content/twevisual/fabric2.jpg"]
         },
         4: {
             type: "header",
@@ -400,7 +400,7 @@ var articles = {
         },
         1: {
             type: "subheader",
-            content: ["Client commissioned logo"]
+            content: ["Client Commissioned Iconography"]
         },
         2: {
             type: "hero",
