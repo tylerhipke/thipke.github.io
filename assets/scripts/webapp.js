@@ -136,6 +136,10 @@ function renderArticle(id) {
                 console.log("link inistialized");
                 renderLinkBlock(thisArticle[i])
                 break;
+            case "hero":
+                console.log("hero initialized");
+                renderHeroBlock(thisArticle[i]);
+                break;
         };
     }
 };
@@ -171,6 +175,18 @@ function renderImageBlock(article) {
         + '<div class="col-6">'
         + '<p>' + article.content[1] + '</p>'
         + '</div>' + '</div>'
+    );
+};
+
+function renderHeroBlock(article) {
+    console.log("img render function activated");
+    $('#blockrenderinput').append('<div class="row mt-2">'
+        + '<div class="col-12">'
+        + '<img src='
+        + article.content[0]
+        + ' class="img-fluid">'
+        + '</div>'
+        + '</div>'
     );
 };
 
@@ -331,6 +347,20 @@ var articles = {
         2: {
             type: "link",
             content: ["Public GitHub Access", "https://github.com/acidanthera/OpenCorePkg"]
+        }
+    },
+    7: {  //iconography
+        0: {
+            type: "header",
+            content: ["RK Medic Line"]
+        },
+        1: {
+            type: "subheader",
+            content: ["Client commissioned logo"]
+        },
+        2: {
+            type: "hero",
+            content: ["./assets/content/icons/rkc-logo-650-custom.png"]
         }
     }
 }
