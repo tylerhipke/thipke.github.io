@@ -406,5 +406,29 @@ var articles = {
             type: "hero",
             content: ["./assets/content/icons/rkc-logo-650-custom.png"]
         }
+    },
+    8: {
+        0: {
+            type: "link",
+            content: ["Cymbiotika Link", "https://www.cymbiotika.com"]
+        }
+    },
+    9: {
+        0: {
+            type: "link",
+            content: ["Rya Organics Link", "https://www.ryaorganics.com"]
+        }
+    },
+    10: {
+        0: {
+            type: "link",
+            content: ["Cymbiotika Wholesale Link", "https://wholesale.cymbiotika.com"]
+        }
+    },
+    11: {
+        0: {
+            type: "link",
+            content: ["Rya Facial Mist Landing Page Link", "https://mist.ryaorganics.com"]
+        }
     }
 }
